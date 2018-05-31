@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>简历</title>
+		<link id="cssTemplate" rel="stylesheet" href="css/style_3.css">
+	</head>
+	<body>
+		<div class="btn-group">
+			<button id="template1" type="button">模板一</button>
+			<button id="template2" type="button">模板二</button>
+			<button id="template3" type="button">模板三</button>
+		</div>
+		<div class="content">
+			<div class="title"><h1>简历</h1></div>
+			<ul class="list">
+				<li class="item">
+					<h2 class="item-title">基本信息</h2>
+					<ul class="item-list">
+						<li>
+							<p><b>姓名&ensp;</b>张三<b>&emsp;&emsp;性别&ensp;</b>男<b>&emsp;&emsp;应聘职位&ensp;</b> 前端开发工程师</p>
+						</li>
+					</ul>
+				</li>
+				<li class="item">
+					<h2 class="item-title">联系方式</h2>
+					<ul class="item-list">
+						<li>
+							<p><b>手机&ensp;</b>12210001000<b>&emsp;&emsp;Email&ensp;</b><a href="#">925338988@qq.com</a>&emsp;&emsp;<b>个人主页&ensp;</b><a target="_blank" href="https://github.com/lin1994">Github</a></p>					
+						</li>
+					</ul>
+				</li>
+				<li class="item">
+					<h2 class="item-title">能力描述</h2>
+					<ul class="item-list">
+						<li>
+							<p><b>技术能力</b></p>
+							<p>熟练掌握HTML，CSS，JavaScript</p>
+						</li>
+						<li>
+							<p><b>综合能力</b></p>
+							<p>良好的沟通，主动积极，努力勤奋</p>
+						</li>
+					</ul>
+				</li>
+				<li class="item">
+					<h2 class="item-title">教育经历</h2>
+					<ul class="item-list">
+						<li>
+							<p><b>本科</b></p>
+							<p>百度前端技术学院小微学院</p>
+						</li>
+						<li>
+							<p><b>研究生</b></p>
+							<p>百度前端技术学院大斌学院</p>
+						</li>
+					</ul>
+				</li>
+				<li class="item">
+					<h2 class="item-title">项目经历</h2>
+					<ul class="item-list">
+						<li>
+							<p><b>小度小度</b></p>
+							<p>作为前端工程师角色参与了ABC组件的开发</p>
+						</li>
+						<li>
+							<p><b>SAN Doc</b></p>
+							<p>作为文档工程师参与了SAN Doc编写</p>
+						</li>
+					</ul>					
+				</li>
+			</ul>
+		</div>
+		<script>
+            window.onload = function(){  
+                var $template1 = document.getElementById("template1");
+				var $template2 = document.getElementById("template2");
+				var $template3 = document.getElementById("template3");
+				var $cssTemplate = document.getElementById("cssTemplate");
+				$template1.onclick=function(){
+					$cssTemplate.href="css/style_1.css";
+				};
+				$template2.onclick=function(){
+					$cssTemplate.href="css/style_2.css";
+				};
+				$template3.onclick=function(){
+					$cssTemplate.href="css/style_3.css";
+				};
+            };
+		</script>
+	</body>
+</html>
